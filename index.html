@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header > 
+        <div class="wave-container">
+            <div class="caption">
+                <h1>BOOKSHELF APPS</h1>
+                <hr>
+                <p>Aplikasi berbasis web yang memiliki fungsi untuk mengelola buku anda menjadi lebih mudah.<p>
+                <a class="btn submit-btn" href="#main">Coba Sekarang !</a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,197.3C672,203,768,245,864,229.3C960,213,1056,139,1152,117.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+    </header>
+
+    <div class="form-wrapper">
+        <div class="container" id="main">
+            <h2 class="header-title" >Tambahkan buku yang ingin dibaca !</h2>
+            <form id="form-input" class="form-input"  >
+                <div class="group-form">
+                    <label for="title">Masukkan Judul Buku</label>
+                    <input type ="text" id="title" name="title" required>
+                </div> 
+
+                <div class="group-form">
+                    <label for="title">Masukkan Nama Penulis</label>
+                    <input type ="text" id="writer" name="writer" required>
+                </div> 
+
+                <div class="group-form">
+                    <label for="title">Masukkan Tanggal Buku</label>
+                    <input type ="date" id="date" name="date" required> 
+                </div>
+                <input type="submit" value="Tambahkan Buku" name="Submit" class="btn submit-btn"> 
+            </form>
+        </div>
+    </div>
+
+    <div class="item-wrapper">
+        <div class="container">
+            <h2 class="header-title">Daftar Buku</h2>
+            <hr>
+            <div >
+                <h2 class="header-title" >Buku yang Belum Dibaca</h2>
+                <div class="list-book" id = "books">   
+                </div>
+            </div>
+
+            <div>
+                <h2 class="header-title" >Buku yang Sudah Dibaca</h2>
+                <div class="list-book" id = "readed-books">   
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+    <footer>
+        <div class="wave-container"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,181.3C384,192,480,192,576,176C672,160,768,128,864,117.3C960,107,1056,117,1152,144C1248,171,1344,213,1392,234.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <p >Sayful Haji Fahruri - 2022</p>
+        </div>
+    </footer> 
+
+    <script src="./js/storage.js" type="text/javascript"></script>
+    <script src="./js/dom.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+</body>

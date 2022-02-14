@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wave-container{
+position: relative;
+background: #e7e2df;
+color: #23204b;
+text-align: center;
+overflow: hidden;
+}
+
+.wave-container > svg {
+    display: block;
+}
+
+.caption {
+    letter-spacing: 3px;
+    font-family: 'Oswald', sans-serif;
+    padding: 40px;
+    margin: 20px;
+    font-size: 24px;
+}
+
+.caption p{
+    color: #343537;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+}
+
+hr{
+    width: 280px;
+    border-top: 4px solid #b30f27;
+}
+
+.caption-footer {
+    letter-spacing: 3px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.caption a{
+    text-decoration: none;
+    letter-spacing: 0;
+}
+
+.header-title{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.form-wrapper{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    height: 650px;
+}
+
+.form-wrapper .container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.form-input{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.group-form label {
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+input[type=text],
+input[type=date] {
+    border: 3px solid #23204b;
+    border-radius: 10px;
+    padding: 20px ;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.item-wrapper{
+    width: 85%;
+    height: fit-content;
+    padding: 20px 0 20px 0;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.item-wrapper .container{
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.item-book {
+    border-radius: 16px;
+    padding: 12px 30px 12px 30px;
+    color: #23204b;
+    display: flex;
+    align-items: center;
+    border: 3px solid #23204b;
+    margin: 20px;
+}
+
+.item-book:hover{
+    background: #23204b;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.list-book{
+    margin:20px 20px;
+}
+
+footer{
+    margin-top: 50px;
+    color: #23204b;
+    text-align: center;
+}
+
+footer p{
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.btn {
+    width: max-content;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.submit-btn{
+    background-color: #b30f27;
+    color: white;
+    border: 2px solid;
+    padding: 12px 30px;
+}
+
+.submit-btn:hover{
+    color: #b30f27;
+    background:transparent;
+}
+
+.completed-btn {
+    background: url('../assets/completed-btn.png');
+    background-size: contain;
+    margin-left: auto;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.completed-btn:hover{
+    background: url('../assets/completed-btn-hover.png');
+    background-size: contain;
+}
+
+
+.delete-btn {
+    background: url('../assets/trash-btn.png');
+    background-size: contain;
+    margin-left: 18px;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.delete-btn:hover{
+    background: url('../assets/trash-btn-hover.png');
+    background-size: contain;
+}
+
+.undo-btn{
+    background: url('../assets/undo-btn.png');
+    background-size: contain;
+    margin-left: auto;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;  
+    transition: 0.5s;  
+}
+
+.undo-btn:hover{
+    background: url('../assets/undo-btn-hover.png');
+    background-size: contain;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .item-book {
+        padding: 14px 18px 14px 18px;
+    }
+
+    .completed-btn{
+        width: 32px;
+        height: 32px;
+    }
+
+    .delete-btn{
+        width: 32px;
+        height: 32px;
+    }
+
+    .undo-btn{
+        width: 32px;
+        height: 32px;
+    }
+}
